@@ -3,7 +3,7 @@
 ** Python 3.6 - 3.8
 ***
 # FUNÇÕES DO BOT
- - [x] DELETA CANAL
+ - [x] DELETAR CANAL
  - [x] BANIR TODOS MEMBROS
  - [x] DELETAR ROLES
  - [x] CRIAR CANAL
