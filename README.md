@@ -2,7 +2,7 @@
 ** REQUISITOS 
 ** Python 3.6 - 3.8
 ***
-# Features
+# FUNÇÕES DO BOT
  - [x] DELETA CANAL
  - [x] BANIR TODOS MEMBROS
  - [x] DELETAR ROLES
