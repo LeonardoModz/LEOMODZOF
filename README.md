@@ -19,7 +19,7 @@ pkg install python git
 
 git clone https://github.com/LeonardoModz/NUNE-BOT-KK
 
-cd Discord-Nuke-Bot
+cd NUNE-BOT-KK
 
 python -m pip install -r requirements.txt
 
