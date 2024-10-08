@@ -10,8 +10,8 @@
  - [x] CRIAR ROLES
 
 ***
-# instalação no:
-## Android(Termux):
+# INSTALAÇÃO NO ANDROID
+## TERMINAL TERMUX:
 ```console
 apt update && apt upgrade
 
