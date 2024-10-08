@@ -7,7 +7,7 @@
  - [x] BANIR TODOS MEMBROS
  - [x] DELETAR ROLES
  - [x] CRIAR CANAL
- - [ ] CRIAR ROLES
+ - [x] CRIAR ROLES
 
 ***
 # instalação no:
