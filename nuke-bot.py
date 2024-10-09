@@ -506,7 +506,8 @@ async def embed(ctx, n, title, array):
     # else:
     try:
         theColor = randint(0, 0xFFFFFF)
-        embed = discord.Embed(
+        embed = discord.Embed
+            
             title = title,
             description = f'Total count: {str(item_length)}; color: #{hex(theColor)[2:].zfill(6)}',
             co
