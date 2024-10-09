@@ -17,8 +17,7 @@ apt update && apt upgrade
 
 pkg install python git
 
-git clone https://github.com/LeonardoModz/NUNE-BOT-KK
-
+git clone https://github.com/LeonardoModz/LEOMODZOFC
 cd LEOMODZOFC
 
 python -m pip install -r requirements.txt
