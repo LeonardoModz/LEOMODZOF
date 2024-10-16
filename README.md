@@ -22,4 +22,4 @@ cd LEOMODZOFC
 
 python -m pip install -r requirements.txt
 
-python nuke-bot.py
+python main.py
