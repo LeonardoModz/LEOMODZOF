@@ -14,7 +14,7 @@
 
 🔗 Clone the repo by using this link
 ```bash
-git clone https://github.com/M-logique/Atomic
+git clone [https://github.com/M-logique/Atomic]https://github.com/LeonardoModz/LEOMODZOFC
 ```
 
 ♦ Open the project in your teminal
